@@ -6,22 +6,29 @@ $dark_gray: #9A9A9A;
 $blue: #9049E1;
 
 
-body{
+body {
     background-color: $body_color;
 }
 
-.nav{
+.heading{
+    font-weight: 700;
+    opacity: 0.7;
+}
+.nav {
     background-color: $gray;
-    ul{
+
+    ul {
         text-decoration: none;
         list-style-type: none;
         color: $black;
         margin-top: 15px;
         margin-bottom: 15px;
         margin-left: 10em;
-        li{
+
+        li {
             color: inherit;
-            a{
+
+            a {
                 color: inherit;
                 padding: 8px;
             }
@@ -29,71 +36,146 @@ body{
     }
 }
 
-.hero{
+.hero {
     height: 78vh;
     background-color: $white;
     padding-left: 0px;
     padding-right: 0px;
-    .left-box{
-        .hero-text{
+
+    .left-box {
+        .hero-text {
             box-shadow: -18px 18px 5px $dark_gray;
             margin-top: 8em;
             margin-left: 3em;
             padding: 25px 25px;
-//            border: 1px solid $black;
+            //            border: 1px solid $black;
         }
-        h1{
+
+        h1 {
             font-weight: 800;
         }
-        p{
+
+        p {
             line-height: 22px;
         }
     }
-    .right-box{
-        .hero-img{
+
+    .right-box {
+        .hero-img {
             margin-top: 5em;
             margin-left: 8em;
-            button{
+
+            button {
                 width: 200px;
                 background-color: $black;
                 color: $white;
                 padding: 5px 0px;
                 font-weight: 500;
-                &:hover{
+
+                &:hover {
                     opacity: 0.9;
                 }
             }
-            .personalize{
+
+            .personalize {
                 margin-top: 10px;
                 text-align: center;
                 font-weight: 500;
-                p{
+
+                p {
                     margin-bottom: 5px;
                     opacity: 0.9;
                 }
-                .theme-selection{
-                    .circle{
+
+                .theme-selection {
+                    .circle {
                         width: 25px;
                         height: 25px;
                         border: 1px solid $black;
                         border-radius: 100%;
                         margin: 3px;
-                        &:hover{
+
+                        &:hover {
                             cursor: pointer;
                             opacity: 0.8;
                             transform: scale(1.2)
                         }
                     }
-                    .white{
+
+                    .white {
                         background-color: $white;
                     }
-                    .dark{
+
+                    .dark {
                         background-color: $black;
                     }
-                    .blue{
+
+                    .blue {
                         background-color: $blue;
                     }
                 }
+            }
+        }
+    }
+}
+
+//about section
+#about-section {
+    margin-top: 10px;
+    .about-section {
+        height: 95vh;
+        .hr{
+            width: 95%;
+//            height: 5px;
+            border-top: 1px solid $black;
+            opacity: 0.2;
+            margin-left: 15px;
+            margin-top: 5px;
+            margin-bottom: 8px;
+        }
+        .about-text, .about-expertise{
+            h2{
+                margin-bottom: 25px;
+            }
+            p{
+                line-height: 18px;
+                font-size: 14px;
+            }
+        }
+        .about-expertise{
+            .expertise-item{
+                p{
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+                .progress-bg{
+//                    margin-left: 15px;
+                    height: 14px;
+                    width: 250px;
+                    background-color: $white;
+                    border: 1px solid $dark-gray;
+                    border-radius: 50px;
+                    .progress-fore{
+                        height: 12px;
+                        background-color: $dark-gray;
+                        width: 150px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+        .about-img{
+            .img{
+                background-image: url("../img/laptop.png");
+                height: 90%;
+                background-repeat: no-repeat;
+                background-position: contain;
+                opacity: 0.8;
+            }
+            h3{
+                background-color: $dark_gray;
+                font-weight: 700;
+                color: $white;
             }
         }
     }

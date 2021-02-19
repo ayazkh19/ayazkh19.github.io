@@ -2,6 +2,11 @@ body {
   background-color: #F6F6F6;
 }
 
+.heading {
+  font-weight: 700;
+  opacity: 0.7;
+}
+
 .nav {
   background-color: #EFEEEE;
 }
@@ -82,6 +87,57 @@ body {
 }
 .hero .right-box .hero-img .personalize .theme-selection .blue {
   background-color: #9049E1;
+}
+
+#about-section {
+  margin-top: 10px;
+}
+#about-section .about-section {
+  height: 95vh;
+}
+#about-section .about-section .hr {
+  width: 95%;
+  border-top: 1px solid #3B3B3B;
+  opacity: 0.2;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+#about-section .about-section .about-text h2, #about-section .about-section .about-expertise h2 {
+  margin-bottom: 25px;
+}
+#about-section .about-section .about-text p, #about-section .about-section .about-expertise p {
+  line-height: 18px;
+  font-size: 14px;
+}
+#about-section .about-section .about-expertise .expertise-item p {
+  font-weight: 500;
+  font-size: 14px;
+}
+#about-section .about-section .about-expertise .expertise-item .progress-bg {
+  height: 14px;
+  width: 250px;
+  background-color: #FFFFFF;
+  border: 1px solid #9A9A9A;
+  border-radius: 50px;
+}
+#about-section .about-section .about-expertise .expertise-item .progress-bg .progress-fore {
+  height: 12px;
+  background-color: #9A9A9A;
+  width: 150px;
+  border-radius: 50px;
+}
+#about-section .about-section .about-img .img {
+  background-image: url("../img/laptop.png");
+  height: 90%;
+  background-repeat: no-repeat;
+  background-position: contain;
+  opacity: 0.8;
+}
+#about-section .about-section .about-img h3 {
+  background-color: #9A9A9A;
+  font-weight: 700;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
