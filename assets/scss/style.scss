@@ -10,10 +10,11 @@ body {
     background-color: $body_color;
 }
 
-.heading{
+.heading {
     font-weight: 700;
     opacity: 0.7;
 }
+
 .nav {
     background-color: $gray;
 
@@ -21,7 +22,7 @@ body {
         text-decoration: none;
         list-style-type: none;
         color: $black;
-        margin-top: 15px;
+        margin-top: 20px;
         margin-bottom: 15px;
         margin-left: 10em;
 
@@ -37,10 +38,11 @@ body {
 }
 
 .hero {
-    height: 78vh;
+    //    height: 78vh;
     background-color: $white;
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 6em;
 
     .left-box {
         .hero-text {
@@ -121,41 +123,51 @@ body {
 
 //about section
 #about-section {
-    margin-top: 10px;
+    //    margin-top: 10px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+
     .about-section {
-        height: 95vh;
-        .hr{
+        //        height: 95vh;
+
+        .hr {
             width: 95%;
-//            height: 5px;
+            //            height: 5px;
             border-top: 1px solid $black;
             opacity: 0.2;
             margin-left: 15px;
             margin-top: 5px;
             margin-bottom: 8px;
         }
-        .about-text, .about-expertise{
-            h2{
+
+        .about-text,
+        .about-expertise {
+            h2 {
                 margin-bottom: 25px;
             }
-            p{
+
+            p {
                 line-height: 18px;
                 font-size: 14px;
             }
         }
-        .about-expertise{
-            .expertise-item{
-                p{
+
+        .about-expertise {
+            .expertise-item {
+                p {
                     font-weight: 500;
                     font-size: 14px;
                 }
-                .progress-bg{
-//                    margin-left: 15px;
+
+                .progress-bg {
+                    //                    margin-left: 15px;
                     height: 14px;
                     width: 250px;
                     background-color: $white;
                     border: 1px solid $dark-gray;
                     border-radius: 50px;
-                    .progress-fore{
+
+                    .progress-fore {
                         height: 12px;
                         background-color: $dark-gray;
                         width: 150px;
@@ -164,18 +176,98 @@ body {
                 }
             }
         }
-        .about-img{
-            .img{
+
+        .about-img {
+            .img {
                 background-image: url("../img/laptop.png");
                 height: 90%;
                 background-repeat: no-repeat;
                 background-position: contain;
                 opacity: 0.8;
             }
-            h3{
+
+            h3 {
                 background-color: $dark_gray;
                 font-weight: 700;
                 color: $white;
+            }
+        }
+    }
+}
+
+//project-section
+#projects {
+    //    height: 100vh;
+    background-color: $white;
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    .heading {
+        //        padding-top: 35px;
+        margin-bottom: 2em;
+
+        h2 {
+            font-weight: 700;
+        }
+    }
+
+    .project-container {
+        height: 90%;
+
+        .project-section {
+            height: inherit;
+            padding: 0px 15px;
+
+            .project {
+                //            border: 1px solid black;
+
+                box-shadow:
+                    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                    0 12.5px 10px rgba(0, 0, 0, 0.06),
+                    0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
+                    0 -6.7px 5.3px rgba(0, 0, 0, 0.048);
+
+                /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+                .img {
+
+                    width: inherit;
+                    height: 350px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: cover;
+                    background-position: 0 0;
+                }
+
+                .project-text {
+                    background-color: $gray;
+
+                    h3 {
+                        font-size: 16px;
+                        padding: 0px;
+                        margin: 0px;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        padding: 0px;
+                        margin: 0px;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+
+                    a {
+                        font-weight: 500;
+                        font-size: 14px;
+
+                    }
+
+                    h3,
+                    p,
+                    a {
+                        padding-left: 5px;
+                    }
+                }
             }
         }
     }
