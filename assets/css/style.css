@@ -1,0 +1,87 @@
+body {
+  background-color: #F6F6F6;
+}
+
+.nav {
+  background-color: #EFEEEE;
+}
+.nav ul {
+  text-decoration: none;
+  list-style-type: none;
+  color: #3B3B3B;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10em;
+}
+.nav ul li {
+  color: inherit;
+}
+.nav ul li a {
+  color: inherit;
+  padding: 8px;
+}
+
+.hero {
+  height: 78vh;
+  background-color: #FFFFFF;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.hero .left-box .hero-text {
+  box-shadow: -18px 18px 5px #9A9A9A;
+  margin-top: 8em;
+  margin-left: 3em;
+  padding: 25px 25px;
+}
+.hero .left-box h1 {
+  font-weight: 800;
+}
+.hero .left-box p {
+  line-height: 22px;
+}
+.hero .right-box .hero-img {
+  margin-top: 5em;
+  margin-left: 8em;
+}
+.hero .right-box .hero-img button {
+  width: 200px;
+  background-color: #3B3B3B;
+  color: #FFFFFF;
+  padding: 5px 0px;
+  font-weight: 500;
+}
+.hero .right-box .hero-img button:hover {
+  opacity: 0.9;
+}
+.hero .right-box .hero-img .personalize {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+.hero .right-box .hero-img .personalize p {
+  margin-bottom: 5px;
+  opacity: 0.9;
+}
+.hero .right-box .hero-img .personalize .theme-selection .circle {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #3B3B3B;
+  border-radius: 100%;
+  margin: 3px;
+}
+.hero .right-box .hero-img .personalize .theme-selection .circle:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+.hero .right-box .hero-img .personalize .theme-selection .white {
+  background-color: #FFFFFF;
+}
+.hero .right-box .hero-img .personalize .theme-selection .dark {
+  background-color: #3B3B3B;
+}
+.hero .right-box .hero-img .personalize .theme-selection .blue {
+  background-color: #9049E1;
+}
+
+/*# sourceMappingURL=style.css.map */

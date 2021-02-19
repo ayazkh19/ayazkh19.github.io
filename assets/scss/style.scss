@@ -1,0 +1,100 @@
+$body_color: #F6F6F6;
+$white: #FFFFFF;
+$black: #3B3B3B;
+$gray: #EFEEEE;
+$dark_gray: #9A9A9A;
+$blue: #9049E1;
+
+
+body{
+    background-color: $body_color;
+}
+
+.nav{
+    background-color: $gray;
+    ul{
+        text-decoration: none;
+        list-style-type: none;
+        color: $black;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 10em;
+        li{
+            color: inherit;
+            a{
+                color: inherit;
+                padding: 8px;
+            }
+        }
+    }
+}
+
+.hero{
+    height: 78vh;
+    background-color: $white;
+    padding-left: 0px;
+    padding-right: 0px;
+    .left-box{
+        .hero-text{
+            box-shadow: -18px 18px 5px $dark_gray;
+            margin-top: 8em;
+            margin-left: 3em;
+            padding: 25px 25px;
+//            border: 1px solid $black;
+        }
+        h1{
+            font-weight: 800;
+        }
+        p{
+            line-height: 22px;
+        }
+    }
+    .right-box{
+        .hero-img{
+            margin-top: 5em;
+            margin-left: 8em;
+            button{
+                width: 200px;
+                background-color: $black;
+                color: $white;
+                padding: 5px 0px;
+                font-weight: 500;
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+            .personalize{
+                margin-top: 10px;
+                text-align: center;
+                font-weight: 500;
+                p{
+                    margin-bottom: 5px;
+                    opacity: 0.9;
+                }
+                .theme-selection{
+                    .circle{
+                        width: 25px;
+                        height: 25px;
+                        border: 1px solid $black;
+                        border-radius: 100%;
+                        margin: 3px;
+                        &:hover{
+                            cursor: pointer;
+                            opacity: 0.8;
+                            transform: scale(1.2)
+                        }
+                    }
+                    .white{
+                        background-color: $white;
+                    }
+                    .dark{
+                        background-color: $black;
+                    }
+                    .blue{
+                        background-color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
