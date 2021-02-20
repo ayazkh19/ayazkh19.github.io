@@ -219,14 +219,22 @@ body {
             padding: 0px 15px;
 
             .project {
+                &:hover {
+                    box-shadow:
+                        0 2.8px 10.2px rgba(0, 0, 0, 0.034),
+                        0 6.7px 10.3px rgba(0, 0, 0, 0.048),
+                        0 12.5px 25px rgba(0, 0, 0, 0.06),
+                        0 -2.8px 10.2px rgba(0, 0, 0, 0.034),
+                        0 -6.7px 10.3px rgba(0, 0, 0, 0.048);
+                }
+
                 //            border: 1px solid black;
 
-                box-shadow:
-                    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-                    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-                    0 12.5px 10px rgba(0, 0, 0, 0.06),
-                    0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
-                    0 -6.7px 5.3px rgba(0, 0, 0, 0.048);
+                box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                0 12.5px 10px rgba(0, 0, 0, 0.06),
+                0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
+                0 -6.7px 5.3px rgba(0, 0, 0, 0.048);
 
                 /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
                 .img {
@@ -270,5 +278,75 @@ body {
                 }
             }
         }
+    }
+}
+
+#contact {
+    .heading {
+        //        padding-top: 35px;
+        //        margin-bottom: 2em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+
+        h2 {
+            font-weight: 700;
+        }
+    }
+
+    .contact-container {
+        .frm-group {
+            padding-bottom: 1.2em;
+
+            .input-label {
+                font-weight: 600;
+                margin-bottom: 2px;
+                margin-left: 5px;
+                text-transform: capitalize;
+            }
+
+            .input {
+                outline-color: $dark_gray;
+                border: 2px solid $dark_gray;
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 380px;
+                height: 35px;
+            }
+
+            .text-area {
+                outline-color: $dark_gray;
+                border: 2px solid $dark_gray;
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .frm-btn {
+                text-transform: capitalize;
+                background-color: $black;
+                color: $white;
+                border-radius: 5px;
+                font-weight: 600;
+
+                &:hover {
+                    transform: scale(0.99);
+                    opacity: 0.9;
+
+
+                }
+
+            }
+        }
+
+        .frm-group:nth-last-child(2) {
+            padding-bottom: 5px;
+        }
+
+
     }
 }
