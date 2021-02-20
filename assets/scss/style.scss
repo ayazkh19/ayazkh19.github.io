@@ -4,6 +4,7 @@ $black: #3B3B3B;
 $gray: #EFEEEE;
 $dark_gray: #9A9A9A;
 $blue: #9049E1;
+$red: #dc3545;
 
 
 body {
@@ -424,5 +425,24 @@ body {
                 }
             }
         }
+    }
+}
+
+#modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+
+    #modal {
+        border-radius: 5px;
+        //        border: 2px solid $red;
+        width: 400px;
+        height: 180px;
+        position: relative;
+        background-color: $white;
+        top: 5%;
+        left: 30%;
     }
 }
