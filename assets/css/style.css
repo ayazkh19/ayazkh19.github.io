@@ -25,6 +25,11 @@ body {
   color: inherit;
   padding: 8px;
 }
+@media (max-width: 770px) {
+  .nav ul {
+    margin-left: 5em;
+  }
+}
 
 .hero {
   background-color: #FFFFFF;
@@ -104,6 +109,7 @@ body {
 #about-section .about-section .about-text h2,
 #about-section .about-section .about-expertise h2 {
   margin-bottom: 25px;
+  font-weight: 700;
 }
 #about-section .about-section .about-text p,
 #about-section .about-section .about-expertise p {
@@ -151,14 +157,13 @@ body {
 #projects .heading h2 {
   font-weight: 700;
 }
-#projects .project-container {
-  height: 90%;
-}
 #projects .project-container .project-section {
   height: inherit;
   padding: 0px 15px;
 }
 #projects .project-container .project-section .project {
+  margin-bottom: 10px;
+  margin-bottom: 10px;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 -2.8px 2.2px rgba(0, 0, 0, 0.034), 0 -6.7px 5.3px rgba(0, 0, 0, 0.048);
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
@@ -167,11 +172,16 @@ body {
 }
 #projects .project-container .project-section .project .img {
   width: inherit;
-  height: 350px;
+  height: 300px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: contain;
   background-position: 0 0;
+}
+@media (max-width: 990px) {
+  #projects .project-container .project-section .project .img {
+    height: 250px;
+  }
 }
 #projects .project-container .project-section .project .project-text {
   background-color: #EFEEEE;
@@ -247,6 +257,51 @@ body {
 }
 #contact .contact-container .frm-group:nth-last-child(2) {
   padding-bottom: 5px;
+}
+
+#footer .main {
+  background-color: #EFEEEE;
+}
+#footer .main .footer-main-links {
+  padding-top: 2em;
+  padding-left: 1.5em;
+}
+#footer .main .footer-main-links h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+#footer .main .footer-main-links ul {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0px;
+}
+#footer .main .footer-main-links ul li {
+  padding: 0px;
+  margin: 0px;
+  line-height: 16px;
+}
+#footer .main .footer-main-links ul li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+  padding: inherit;
+}
+#footer .main .footer-main-links ul li a:hover {
+  text-decoration: underline;
+}
+#footer .secondary {
+  background-color: #9A9A9A;
+}
+#footer .secondary .credits {
+  padding-left: 1.5em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#footer .secondary .credits p {
+  margin: 0px;
+}
+#footer .secondary .credits p small {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

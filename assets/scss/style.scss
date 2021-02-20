@@ -35,6 +35,12 @@ body {
             }
         }
     }
+
+    @media (max-width: 770px) {
+        ul {
+            margin-left: 5em;
+        }
+    }
 }
 
 .hero {
@@ -52,6 +58,8 @@ body {
             padding: 25px 25px;
             //            border: 1px solid $black;
         }
+
+
 
         h1 {
             font-weight: 800;
@@ -144,6 +152,7 @@ body {
         .about-expertise {
             h2 {
                 margin-bottom: 25px;
+                font-weight: 700;
             }
 
             p {
@@ -212,13 +221,16 @@ body {
     }
 
     .project-container {
-        height: 90%;
+        //        height: 90%;
 
         .project-section {
             height: inherit;
             padding: 0px 15px;
 
             .project {
+                margin-bottom: 10px;
+                margin-bottom: 10px;
+
                 &:hover {
                     box-shadow:
                         0 2.8px 10.2px rgba(0, 0, 0, 0.034),
@@ -240,11 +252,17 @@ body {
                 .img {
 
                     width: inherit;
-                    height: 350px;
+                    height: 300px;
                     background-size: contain;
                     background-repeat: no-repeat;
-                    background-position: cover;
+                    background-position: contain;
                     background-position: 0 0;
+                }
+
+                @media (max-width: 990px) {
+                    .img {
+                        height: 250px;
+                    }
                 }
 
                 .project-text {
@@ -280,6 +298,7 @@ body {
         }
     }
 }
+
 
 #contact {
     .heading {
@@ -348,5 +367,62 @@ body {
         }
 
 
+    }
+}
+
+#footer {
+    .main {
+        background-color: $gray;
+
+        .footer-main-links {
+            padding-top: 2em;
+            padding-left: 1.5em;
+
+            h4 {
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            ul {
+                list-style-type: none;
+                text-decoration: none;
+                padding: 0px;
+
+                li {
+                    padding: 0px;
+                    margin: 0px;
+                    line-height: 16px;
+
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                        font-size: 12px;
+                        padding: inherit;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .secondary {
+        background-color: $dark_gray;
+
+        .credits {
+            padding-left: 1.5em;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            p {
+                margin: 0px;
+
+                small {
+                    font-weight: 600;
+                }
+            }
+        }
     }
 }
