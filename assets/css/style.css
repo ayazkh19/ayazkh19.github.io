@@ -116,22 +116,9 @@ body {
   line-height: 18px;
   font-size: 14px;
 }
-#about-section .about-section .about-expertise .expertise-item p {
+#about-section .about-section .about-expertise .expertise-items p {
   font-weight: 500;
   font-size: 14px;
-}
-#about-section .about-section .about-expertise .expertise-item .progress-bg {
-  height: 14px;
-  width: 250px;
-  background-color: #FFFFFF;
-  border: 1px solid #9A9A9A;
-  border-radius: 50px;
-}
-#about-section .about-section .about-expertise .expertise-item .progress-bg .progress-fore {
-  height: 12px;
-  background-color: #9A9A9A;
-  width: 150px;
-  border-radius: 50px;
 }
 #about-section .about-section .about-img .img {
   background-image: url("../img/laptop.png");

@@ -163,27 +163,30 @@ body {
         }
 
         .about-expertise {
-            .expertise-item {
+            ul{
+//                padding-left: 15px;
+            }
+            .expertise-items {
                 p {
                     font-weight: 500;
                     font-size: 14px;
                 }
 
-                .progress-bg {
-                    //                    margin-left: 15px;
-                    height: 14px;
-                    width: 250px;
-                    background-color: $white;
-                    border: 1px solid $dark-gray;
-                    border-radius: 50px;
-
-                    .progress-fore {
-                        height: 12px;
-                        background-color: $dark-gray;
-                        width: 150px;
-                        border-radius: 50px;
-                    }
-                }
+//                .progress-bg {
+    //                    //                    margin-left: 15px;
+    //                    height: 14px;
+    //                    width: 250px;
+    //                    background-color: $white;
+    //                    border: 1px solid $dark-gray;
+    //                    border-radius: 50px;
+    //
+    //                    .progress-fore {
+    //                        height: 12px;
+    //                        background-color: $dark-gray;
+    //                        width: 150px;
+    //                        border-radius: 50px;
+    //                    }
+    //                }
             }
         }
 
