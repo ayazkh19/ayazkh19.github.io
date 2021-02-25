@@ -163,30 +163,31 @@ body {
         }
 
         .about-expertise {
-            ul{
-//                padding-left: 15px;
+            ul {
+                //                padding-left: 15px;
             }
+
             .expertise-items {
                 p {
                     font-weight: 500;
                     font-size: 14px;
                 }
 
-//                .progress-bg {
-    //                    //                    margin-left: 15px;
-    //                    height: 14px;
-    //                    width: 250px;
-    //                    background-color: $white;
-    //                    border: 1px solid $dark-gray;
-    //                    border-radius: 50px;
-    //
-    //                    .progress-fore {
-    //                        height: 12px;
-    //                        background-color: $dark-gray;
-    //                        width: 150px;
-    //                        border-radius: 50px;
-    //                    }
-    //                }
+                //                .progress-bg {
+                //                    //                    margin-left: 15px;
+                //                    height: 14px;
+                //                    width: 250px;
+                //                    background-color: $white;
+                //                    border: 1px solid $dark-gray;
+                //                    border-radius: 50px;
+                //
+                //                    .progress-fore {
+                //                        height: 12px;
+                //                        background-color: $dark-gray;
+                //                        width: 150px;
+                //                        border-radius: 50px;
+                //                    }
+                //                }
             }
         }
 
@@ -231,74 +232,84 @@ body {
             height: inherit;
             padding: 0px 15px;
 
-            .project {
-                margin-bottom: 10px;
-                margin-bottom: 10px;
+            .item-spacing {
+                padding-bottom: 25px;
 
-                &:hover {
-                    box-shadow:
-                        0 2.8px 10.2px rgba(0, 0, 0, 0.034),
-                        0 6.7px 10.3px rgba(0, 0, 0, 0.048),
-                        0 12.5px 25px rgba(0, 0, 0, 0.06),
-                        0 -2.8px 10.2px rgba(0, 0, 0, 0.034),
-                        0 -6.7px 10.3px rgba(0, 0, 0, 0.048);
+                @media(min-width: 770px) {
+                    &:hover {
+                        transform: translate(0px, -10px)
+                    }
                 }
 
-                //            border: 1px solid black;
+                .project {
+                    //                padding-bottom: 30px;
 
-                box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-                0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-                0 12.5px 10px rgba(0, 0, 0, 0.06),
-                0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
-                0 -6.7px 5.3px rgba(0, 0, 0, 0.048);
+                    &:hover {
+                        box-shadow:
+                            0 2.8px 10.2px rgba(0, 0, 0, 0.034),
+                            0 6.7px 10.3px rgba(0, 0, 0, 0.048),
+                            0 12.5px 25px rgba(0, 0, 0, 0.06),
+                            0 -2.8px 10.2px rgba(0, 0, 0, 0.034),
+                            0 -6.7px 10.3px rgba(0, 0, 0, 0.048);
+                    }
 
-                /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-                .img {
+                    //            border: 1px solid black;
 
-                    width: inherit;
-                    height: 300px;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: contain;
-                    background-position: 0 0;
-                }
+                    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+                    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+                    0 12.5px 10px rgba(0, 0, 0, 0.06),
+                    0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
+                    0 -6.7px 5.3px rgba(0, 0, 0, 0.048);
 
-                @media (max-width: 990px) {
+                    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
                     .img {
-                        height: 250px;
-                    }
-                }
 
-                .project-text {
-                    background-color: $gray;
-
-                    h3 {
-                        font-size: 16px;
-                        padding: 0px;
-                        margin: 0px;
-                        font-weight: 700;
+                        width: inherit;
+                        height: 300px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        //                    background-position: 0 0;
                     }
 
-                    p {
-                        padding: 0px;
-                        margin: 0px;
-                        font-size: 12px;
-                        line-height: 15px;
+                    @media (max-width: 990px) {
+                        .img {
+                            height: 250px;
+                        }
                     }
 
-                    a {
-                        font-weight: 500;
-                        font-size: 14px;
+                    .project-text {
+                        background-color: $gray;
 
-                    }
+                        h3 {
+                            font-size: 16px;
+                            padding: 0px;
+                            margin: 0px;
+                            font-weight: 700;
+                        }
 
-                    h3,
-                    p,
-                    a {
-                        padding-left: 5px;
+                        p {
+                            padding: 0px;
+                            margin: 0px;
+                            font-size: 12px;
+                            line-height: 15px;
+                        }
+
+                        a {
+                            font-weight: 500;
+                            font-size: 14px;
+
+                        }
+
+                        h3,
+                        p,
+                        a {
+                            padding-left: 5px;
+                        }
                     }
                 }
             }
+
         }
     }
 }

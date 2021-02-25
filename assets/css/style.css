@@ -148,50 +148,55 @@ body {
   height: inherit;
   padding: 0px 15px;
 }
-#projects .project-container .project-section .project {
-  margin-bottom: 10px;
-  margin-bottom: 10px;
+#projects .project-container .project-section .item-spacing {
+  padding-bottom: 25px;
+}
+@media (min-width: 770px) {
+  #projects .project-container .project-section .item-spacing:hover {
+    transform: translate(0px, -10px);
+  }
+}
+#projects .project-container .project-section .item-spacing .project {
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 -2.8px 2.2px rgba(0, 0, 0, 0.034), 0 -6.7px 5.3px rgba(0, 0, 0, 0.048);
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
-#projects .project-container .project-section .project:hover {
+#projects .project-container .project-section .item-spacing .project:hover {
   box-shadow: 0 2.8px 10.2px rgba(0, 0, 0, 0.034), 0 6.7px 10.3px rgba(0, 0, 0, 0.048), 0 12.5px 25px rgba(0, 0, 0, 0.06), 0 -2.8px 10.2px rgba(0, 0, 0, 0.034), 0 -6.7px 10.3px rgba(0, 0, 0, 0.048);
 }
-#projects .project-container .project-section .project .img {
+#projects .project-container .project-section .item-spacing .project .img {
   width: inherit;
   height: 300px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: contain;
-  background-position: 0 0;
+  background-position: center;
 }
 @media (max-width: 990px) {
-  #projects .project-container .project-section .project .img {
+  #projects .project-container .project-section .item-spacing .project .img {
     height: 250px;
   }
 }
-#projects .project-container .project-section .project .project-text {
+#projects .project-container .project-section .item-spacing .project .project-text {
   background-color: #EFEEEE;
 }
-#projects .project-container .project-section .project .project-text h3 {
+#projects .project-container .project-section .item-spacing .project .project-text h3 {
   font-size: 16px;
   padding: 0px;
   margin: 0px;
   font-weight: 700;
 }
-#projects .project-container .project-section .project .project-text p {
+#projects .project-container .project-section .item-spacing .project .project-text p {
   padding: 0px;
   margin: 0px;
   font-size: 12px;
   line-height: 15px;
 }
-#projects .project-container .project-section .project .project-text a {
+#projects .project-container .project-section .item-spacing .project .project-text a {
   font-weight: 500;
   font-size: 14px;
 }
-#projects .project-container .project-section .project .project-text h3,
-#projects .project-container .project-section .project .project-text p,
-#projects .project-container .project-section .project .project-text a {
+#projects .project-container .project-section .item-spacing .project .project-text h3,
+#projects .project-container .project-section .item-spacing .project .project-text p,
+#projects .project-container .project-section .item-spacing .project .project-text a {
   padding-left: 5px;
 }
 
