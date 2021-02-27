@@ -235,11 +235,11 @@ body {
             .item-spacing {
                 padding-bottom: 25px;
 
-                @media(min-width: 770px) {
-                    &:hover {
-                        transform: translate(0px, -10px)
-                    }
-                }
+                //                @media(min-width: 770px) {
+                //                    &:hover {
+                //                        transform: translate(0px, -10px)
+                //                    }
+                //                }
 
                 .project {
                     //                padding-bottom: 30px;
@@ -251,6 +251,18 @@ body {
                             0 12.5px 25px rgba(0, 0, 0, 0.06),
                             0 -2.8px 10.2px rgba(0, 0, 0, 0.034),
                             0 -6.7px 10.3px rgba(0, 0, 0, 0.048);
+                    }
+
+                    @media(min-width: 770px) {
+                        &:hover {
+                            box-shadow:
+                            0 2.8px 10.2px rgba(0, 0, 0, 0.034),
+                            0 6.7px 10.3px rgba(0, 0, 0, 0.048),
+                            0 12.5px 25px rgba(0, 0, 0, 0.06),
+                            0 -2.8px 10.2px rgba(0, 0, 0, 0.034),
+                            0 -6.7px 10.3px rgba(0, 0, 0, 0.048);
+                            transform: translate(0px, -10px)
+                        }
                     }
 
                     //            border: 1px solid black;
