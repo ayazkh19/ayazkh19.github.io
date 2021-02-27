@@ -3,6 +3,9 @@ let modal_container = document.querySelector('#modal-container');
 let modal = document.querySelector('#modal');
 let body = document.querySelector('#body');
 let circle = document.querySelectorAll('.circle');
+let projects = document.querySelectorAll('.project');
+let modalText = document.querySelector('#modal-text');
+
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -12,6 +15,7 @@ form.addEventListener('submit', function (e) {
 modal_container.addEventListener('click', function () {
     body.style.overflow = 'visible';
     modal_container.style.display = 'none';
+    modalText.innerHTML = 'this feature is currently under development please try again later.';
 });
 
 
@@ -22,3 +26,17 @@ for (let i = 0; i < circle.length; i++) {
         modal_container.style.display = 'block';
     });
 }
+
+
+projects.forEach(function (project) {
+    project.addEventListener('click', function () {
+        let link = project.dataset.link;
+        if (link === '#') {
+            modalText.innerHTML = 'This site is currently under construction please visit later';
+            body.style.overflow = 'hidden';
+            modal_container.style.display = 'block';
+        } else {
+            location.href = link;
+        }
+    });
+});
