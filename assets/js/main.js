@@ -29,8 +29,14 @@ for (let i = 0; i < circle.length; i++) {
 
 
 projects.forEach(function (project) {
-    project.addEventListener('click', function () {
+    project.addEventListener('click', function (event) {
         let link = project.dataset.link;
+         event = event || window.event;
+        let target = event.target || event.srcElement,
+            text = target.textContent || target.innerText;
+        if(text === 'Read More'){
+            return false;
+        }
         if (link === '#') {
             modalText.innerHTML = 'This site is currently under construction please visit later';
             body.style.overflow = 'hidden';
