@@ -26,6 +26,7 @@ body {
         margin-top: 20px;
         margin-bottom: 15px;
         margin-left: 10em;
+        justify-content: end;
 
         li {
             color: inherit;
@@ -33,13 +34,30 @@ body {
             a {
                 color: inherit;
                 padding: 8px;
+                font-weight: 500;
+                text-transform: capitalize;
             }
         }
     }
 
     @media (max-width: 770px) {
         ul {
-            margin-left: 5em;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+    @media (max-width: 300px) {
+        ul {
+            justify-content: center;
+            div{
+                flex-direction: column;
+                text-align: center;
+                li{
+                    margin-bottom: 3px;
+                }
+            }
         }
     }
 }
@@ -47,8 +65,8 @@ body {
 .hero {
     //    height: 78vh;
     background-color: $white;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 6em;
 
     .left-box {
@@ -58,6 +76,11 @@ body {
             margin-left: 3em;
             padding: 25px 25px;
             //            border: 1px solid $black;
+        }
+        @media (max-width: 990px) {
+            .hero-text{
+                margin-top: 4em;
+            }
         }
 
 
@@ -75,12 +98,17 @@ body {
         .hero-img {
             margin-top: 5em;
             margin-left: 8em;
+            img{
+                height: 100%;
+                width: 100%;
+                position: center;
+            }
 
             button {
-                width: 200px;
+                width: 100%;
                 background-color: $black;
                 color: $white;
-                padding: 5px 0px;
+                padding: 5px 0;
                 font-weight: 500;
 
                 &:hover {
@@ -92,6 +120,7 @@ body {
                 margin-top: 10px;
                 text-align: center;
                 font-weight: 500;
+                width: 100%;
 
                 p {
                     margin-bottom: 5px;
@@ -124,6 +153,16 @@ body {
                     .blue {
                         background-color: $blue;
                     }
+                }
+            }
+        }
+        @media(max-width: 560px){
+            .hero-img{
+                margin-left: auto;
+                margin-right: auto;
+                .personalize{
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
@@ -330,6 +369,9 @@ body {
 
 
 #contact {
+    //width: 100%;
+    //margin-left: auto;
+    //margin-right: auto;
     .heading {
         //        padding-top: 35px;
         //        margin-bottom: 2em;
@@ -396,6 +438,18 @@ body {
         }
 
 
+    }
+    @media (max-width: 420px) {
+        .contact-container{
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            .frm-group{
+                .input{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
@@ -466,11 +520,22 @@ body {
     #modal {
         border-radius: 5px;
         //        border: 2px solid $red;
-        width: 400px;
-        height: 180px;
+        width: 60%;
+        height: 30%;
         position: relative;
         background-color: $white;
         top: 5%;
         left: 30%;
+        transform: translate(-15%, 0);
+    }
+    @media (max-width: 300px) {
+        #modal{
+            height: 40%;
+        }
+    }
+    @media (max-height: 620px) {
+        #modal{
+            height: 250px;
+        }
     }
 }
