@@ -203,13 +203,25 @@ body {
 
         .about-expertise {
             ul {
-                //                padding-left: 15px;
+                padding-left: 0px;
+                text-align: start;
             }
 
             .expertise-items {
-                p {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: start;
+                li {
                     font-weight: 500;
                     font-size: 14px;
+                    padding: 8px;
+                    list-style-type: none;
+                    //border: 1px solid black;
+                    margin-right: 8px;
+                    margin-bottom: 8px;
+                    border-radius: 10px;
+                    background-color: $dark_gray;
+                    color: $white;
                 }
 
                 //                .progress-bg {

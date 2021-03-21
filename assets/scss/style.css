@@ -155,9 +155,25 @@ body {
   line-height: 18px;
   font-size: 14px;
 }
-#about-section .about-section .about-expertise .expertise-items p {
+#about-section .about-section .about-expertise ul {
+  padding-left: 0px;
+  text-align: start;
+}
+#about-section .about-section .about-expertise .expertise-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+#about-section .about-section .about-expertise .expertise-items li {
   font-weight: 500;
   font-size: 14px;
+  padding: 8px;
+  list-style-type: none;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background-color: #9A9A9A;
+  color: #FFFFFF;
 }
 #about-section .about-section .about-img .img {
   background-image: url("../img/laptop.png");
