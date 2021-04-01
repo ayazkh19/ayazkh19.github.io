@@ -7,6 +7,10 @@ $blue: #9049E1;
 $red: #dc3545;
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: $body_color;
     font-family: 'Montserrat', sans-serif;
@@ -135,6 +139,7 @@ body {
                         border: 1px solid $black;
                         border-radius: 100%;
                         margin: 3px;
+						transition: 0.1s ease-out;
 
                         &:hover {
                             cursor: pointer;
@@ -315,7 +320,8 @@ body {
                             0 12.5px 25px rgba(0, 0, 0, 0.06),
                             0 -2.8px 10.2px rgba(0, 0, 0, 0.034),
                             0 -6.7px 10.3px rgba(0, 0, 0, 0.048);
-                            transform: translate(0px, -10px)
+                            transform: translate(0px, -10px);
+							
                         }
                     }
 
@@ -326,6 +332,7 @@ body {
                     0 12.5px 10px rgba(0, 0, 0, 0.06),
                     0 -2.8px 2.2px rgba(0, 0, 0, 0.034),
                     0 -6.7px 5.3px rgba(0, 0, 0, 0.048);
+					transition: 0.2s ease-out;
 
                     /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
                     .img {
@@ -435,6 +442,7 @@ body {
                 color: $white;
                 border-radius: 5px;
                 font-weight: 600;
+				transition: 0.1s ease-out;
 
                 &:hover {
                     transform: scale(0.99);
